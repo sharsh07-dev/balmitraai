@@ -1,5 +1,6 @@
 import { ShieldCheck, LayoutDashboard, Settings, Activity, Users, Bell } from "lucide-react";
 import Link from "next/link";
+import { UserButton } from "@clerk/nextjs";
 
 const menuItems = [
   { icon: LayoutDashboard, label: "Overview", active: true },
@@ -42,17 +43,24 @@ export default function Sidebar() {
         ))}
       </nav>
       
-      {/* Bottom Status */}
-      {/* Because the parent now has 'relative', this will sit safely at the bottom of the sidebar */}
-      <div className="absolute bottom-8 left-6 right-6">
-        <div className="bg-slate-800 p-4 rounded-xl border border-slate-700">
-            <p className="text-xs text-slate-400 mb-2">System Status</p>
-            <div className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
-                <span className="text-sm font-semibold text-emerald-400">Online & Secure</span>
+      {/* Bottom User Section */}
+      <div className="absolute bottom-6 left-6 right-6">
+        <div className="bg-slate-800 p-4 rounded-xl border border-slate-700 flex items-center gap-3 shadow-lg">
+            {/* This is the Magic Button: Handles Logout & Profile */}
+            <div className="bg-white rounded-full p-1">
+                <UserButton afterSignOutUrl="/sign-in" />
+            </div>
+            
+            <div className="overflow-hidden">
+                <p className="text-sm font-semibold text-white truncate">Parent Account</p>
+                <div className="flex items-center gap-1.5">
+                    <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+                    <span className="text-xs text-emerald-400">Online</span>
+                </div>
             </div>
         </div>
       </div>
-    </div>
+      
+    </div> 
   );
 }
