@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# 🦸‍♂️ BalMitra AI
 
-First, run the development server:
+**An AI-powered, low-latency child safety ecosystem and emergency response platform.**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[![AVINYA 4.0 Hackathon](https://img.shields.io/badge/AVINYA_4.0-Runner__Up_🥈-FFD700?style=for-the-badge&logo=hackaday&logoColor=black)](#)
+[![Status: Active](https://img.shields.io/badge/Status-Active_Development-2EA043?style=for-the-badge&logo=github)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](#)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0b1120&height=150&section=header&text=BalMitra%20AI&fontSize=50&fontColor=ffffff&animation=fadeIn" alt="BalMitra AI Banner" width="100%"/>
+</p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+*Built during a ruthless 24-hour sprint. 120 Teams. One Stage. 🥈 2nd Place.*
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+</div>
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📖 The Vision
+**BalMitra AI** bridges the gap between passive panic buttons and proactive, intelligent threat mitigation for children. We leverage edge-AI intelligence and a scalable cloud architecture to ensure personal safety through stealth execution, real-time threat detection, and emotional wellness analytics.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 The Ecosystem
 
-## Deploy on Vercel
+BalMitra AI operates through two synchronized micro-frontends:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 📱 1. Child Device Intelligence (Edge & Client)
+*Optimized for low-power consumption and extreme panic scenarios, operating entirely in stealth mode.*
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Feature | Description |
+| :--- | :--- |
+| 🎙️ **Hands-Free SOS** | Trigger mechanisms that require absolute zero screen interaction. |
+| 🧠 **Dual-Engine AI** | On-device models trained to recognize audio and motion anomalies instantly. |
+| ☁️ **Audio Telemetry** | Captures & uploads 5-second audio evidence payloads to the cloud with ultra-low latency. |
+| 🥷 **Stealth Execution**| Alerts are processed silently in the background, masking activity from potential threats. |
+| 🔋 **Low-Power Mode** | Background daemon designed to minimize battery drain while maintaining active inference. |
+
+### 💻 2. Parental Command Dashboard (Cloud & Web)
+*A centralized control hub for real-time monitoring and historical behavioral analysis.*
+
+| Feature | Description |
+| :--- | :--- |
+| 🗺️ **Live Navigation** | Real-time geospatial tracking and fastest-route mapping during an active SOS. |
+| 🗣️ **Wellness Analytics**| Processes voice telemetry to baseline and analyze a child's emotional state. |
+| 🛑 **Bullying Detection** | Identifies anomalies in daily routines and emotional baselines to flag non-physical threats. |
+| 🚧 **Geo-Fenced Zones** | Dynamic push notifications when virtual safety boundaries are breached. |
+| 📡 **Hardware Tracking** | Real-time monitoring of device battery life, network strength, and sensor status. |
+
+---
+
+## ⚙️ System Architecture
+
+*(GitHub will render this diagram automatically)*
+
+```mermaid
+graph TD
+    subgraph Edge Intelligence [Child Device]
+        A[Sensors & Audio] --> B(Dual-Engine AI Model)
+        B -->|Anomaly Detected| C[Stealth SOS Trigger]
+        C --> D{5s Audio Payload}
+    end
+
+    subgraph Backend Core [Node.js / Express]
+        D -->|WebSocket/REST| E((API Gateway))
+        E --> F[Event Broker]
+        F --> G[(MongoDB Vault)]
+        F --> H[Python AI Analytics Service]
+    end
+
+    subgraph Parental Control [Dashboard]
+        F -->|Real-Time Alert| I[Live Map Interface]
+        H -->|Behavioral Insights| J[Wellness Dashboard]
+    end
+
+
+    
