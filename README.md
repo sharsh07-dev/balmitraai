@@ -50,6 +50,27 @@ BalMitra AI operates through two synchronized micro-frontends:
 | 📡 **Hardware Tracking** | Real-time monitoring of device battery life, network strength, and sensor status. |
 
 ---
+## 🛠️ Tech Stack
+> **Note:** The backend architecture was designed for high concurrency and low latency to process incoming SOS requests and audio telemetry without dropping packets during simulated emergency loads.
+
+| Layer | Technologies Used |
+| :--- | :--- |
+| **Frontend / Mobile** | React Native, Figma (UI/UX) |
+| **Backend / API** | Node.js, Express.js, Python |
+| **AI / ML Models** | TensorFlow Lite, PyTorch |
+| **Database / Cache** | MongoDB, Redis |
+| **Cloud / DevOps** | AWS EC2, Docker |
+
+---
+
+## 🏆 The Team (Akatsuki)
+
+We are a team of passionate builders who believe that execution beats ideation. 
+* **Harsh Shinde** – Team Lead & Backend Developer • [LinkedIn](https://www.linkedin.com/in/harsh-shinde-60046436b/)
+* **Rohit Dhangar** – UI/UX Designer
+* **Sham Patil** – App Developer
+
+*BalMitra AI was built under 24 hours at the AVINYA 4.0 Hackathon (Innovision 2026).*
 
 ## ⚙️ System Architecture
 
